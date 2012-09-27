@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<title>Battle Pokemon</title>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Oswald:400,700,300'>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.6.0/build/cssreset/cssreset-min.css" />
+	<link rel="stylesheet" type="text/css" href="battle_pokemon.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="battle_pokemon.js"></script>
+</head>
+
+<body>
+
+	<div id='battle-pokemon-container'>
+		<div id='battle-pokemon-header'>
+
+		</div>
+
+		<div id='battle-pokemon-vs'>
+			
+			<div id='vs-left-side-pokemon'>
+				<div id='vs-left-side-selector'>
+					<div id='left-side-selector-sort'>
+						<div id='left-side-selector-sort-by'>SORT BY:</div>
+						<div id='left-side-selector-sort-name' class='highlight'>Name</div>
+						<div id='left-side-selector-sort-id'>ID</div>
+					</div>
+					<div id='left-side-selector-list'>
+					</div>
+					<div id='left-side-selector-scroll'>
+						<div id='left-side-selector-scroll-up'><div id='arrow-up'></div></div>
+						<div id='left-side-selector-scroll-down'><div id='arrow-down'></div></div>
+					</div>
+				</div>
+
+				<div id='vs-left-side-card'>
+					<div id='left-side-card-header'>
+					</div>
+					<div id='left-side-card-spacer'>
+					</div>
+					<div id='left-side-card-footer'>
+						<div id='left-side-card-footer_id'></div>
+						<div id='left-side-card-footer_name'></div>
+					</div>
+					<div id='left-side-card-pic-container'>
+					</div>
+					<div id='left-side-card-pic-more-info'>
+					</div>
+				</div>
+				<div id='pokeball-bg-red'>
+				</div>
+			</div>
+
+			<div id='vs-matchup-slider'>
+				<div id='matchup-slider-pokeball'>
+					<div id='slider-pokeball-header'><span>BATTLE STATS</span><img src='images/arrow_right.png' /></div>
+					<div id='slider-pokeball-winner'></div>
+					<div id='slider-pokeball-footer'>BATTLE SCORE</div>
+				</div>
+				<div id='matchup-slider-stats'>
+					<div id='slider-stats-header'><img src='images/arrow_left.png' /><span>BATTLE SCORE</span></div>
+					<div id='slider-stats-battle'>
+						<div id='slider-stats-battle-left'></div>
+						<div id='slider-stats-battle-border'></div>
+						<div id='slider-stats-battle-right'></div>
+						<div id='slider-stats-battle-label'>
+							<div id='hp'>HP</div>
+							<div id='att'>ATT</div>
+							<div id='def'>DEF</div>
+							<div id='sa'>S.A.</div>
+							<div id='sd'>S.D.</div>
+							<div id='spd'>SPD</div>
+						</div>
+					</div>
+					<div id='slider-stats-footer'>BATTLE STATS</div>
+				</div>
+			</div>
+
+			<div id='vs-right-side-pokemon'>
+				<div id='vs-right-side-card'>
+					<div id='right-side-card-header'>
+					</div>
+					<div id='right-side-card-spacer'>
+					</div>
+					<div id='right-side-card-footer'>
+						<div id='right-side-card-footer_name'></div>
+						<div id='right-side-card-footer_id'></div>
+					</div>
+					<div id='right-side-card-pic-container'>
+					</div>
+					<div id='right-side-card-pic-more-info'>
+					</div>
+				</div>
+				<div id='pokeball-bg-white'>
+				</div>
+
+				<div id='vs-right-side-selector'>
+					<div id='right-side-selector-sort'>
+						<div id='right-side-selector-sort-by'>SORT BY:</div>
+						<div id='right-side-selector-sort-name' class='highlight'>Name</div>
+						<div id='right-side-selector-sort-id'>ID</div>
+					</div>
+					<div id='right-side-selector-list'>
+					</div>
+					<div id='right-side-selector-scroll'>
+						<div id='right-side-selector-scroll-up'></div>
+						<div id='right-side-selector-scroll-down'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='vs-pokeball-container'>
+				<div id='vs-pokeball'>
+					<div id='vs'>VS.</div>
+				</div>
+				<div id='battle'>BATTLE!</div>
+			</div>
+
+		</div>
+		
+		<div id='battle-pokemon-footer'>
+			<div id='footer-shuffle-button'>
+				SHUFFLE!
+			</div>
+			<div id='footer-battle-button'>
+				BATTLE!
+			</div>
+			<div id='footer-battle-reset-button'>
+				RESET!
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

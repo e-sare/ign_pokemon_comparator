@@ -1,0 +1,1306 @@
+#battle-pokemon-container {
+	height: 400px;
+	width: 780px;
+	overflow: hidden;
+	font-family: 'Oswald', sans-serif;
+}
+
+#battle-pokemon-header {
+	height: 50px;
+	width: inherit;
+	background-color: #000;
+}
+
+#battle-pokemon-vs {
+	height: 260px;
+	width: inherit;
+	position: relative;
+	overflow: hidden;
+}
+
+#battle-pokemon-footer {
+	height: 50px;
+	width: inherit;
+	position: relative;
+	background-color: #000;
+}
+
+#vs-left-side-pokemon {
+	height: inherit;
+	width: 390px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #ccc;
+	z-index: 1;
+}
+
+#vs-left-side-selector {
+	height: inherit;
+	width: 130px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #333;
+}
+
+#left-side-selector-sort {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	text-align: center;
+	position: relative;
+	background: #777;
+}
+
+#left-side-selector-sort-by {
+	height: inherit;
+	width: 65px;
+	font-weight: 400;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000;
+}
+
+#left-side-selector-sort-name {
+	height: inherit;
+	width: 32px;
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	cursor: pointer;
+}
+
+#left-side-selector-sort-id {
+	height: inherit;
+	width: 33px;
+	position: absolute;
+	top: 0px;
+	left: 97.5px;
+	cursor: pointer;
+}
+
+#left-side-selector-list {
+	height: 208px;
+	width: inherit;
+	overflow: scroll;
+}
+
+#left-side-selector-list-form ul li {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+#left-side-selector-list-form ul li:nth-child(odd) {
+	background:#333;
+}
+
+#left-side-selector-list-form ul li:nth-child(even) {
+	background:#444;
+}
+
+#left-side-selector-list-form ul li div {
+	padding-left: 5px;
+}
+
+#left-side-selector-list-form ul li:hover {
+	background: #c00;
+}
+
+#left-side-selector-list-form ul li label {
+	padding-left: 5px;
+}
+
+#left-side-selector-list-form ul li label span {
+	color: #aaa;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+#left-side-selector-scroll {
+	height: 26px;
+	width: inherit;
+	position: relative;
+	background: #777;
+}
+
+#left-side-selector-scroll-up {
+	height: inherit;
+	width: 65px;
+	line-height: 26px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('images/arrow_up.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#left-side-selector-scroll-down {
+	height: inherit;
+	width: 65px;
+	line-height: 26px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	background-image: url('images/arrow_down.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#vs-left-side-card {
+	height: 481px;
+	width: 260px;
+	position: absolute;
+	top: 0px;
+	left: 130px;
+}
+
+#left-side-card-header {
+	height: 26px;
+	width: inherit;
+	background: #333;
+}
+
+#left-side-card-spacer {
+	height: 195px;
+	width: inherit;
+}
+
+#left-side-card-footer {
+	height: 39px;
+	width: inherit;
+}
+
+#left-side-card-footer_id {
+	height: inherit;
+	width: 39px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 39px;
+	text-align: center;
+	background: #c00;
+	float: left;
+}
+
+#left-side-card-footer_name {
+	height: inherit;
+	width: 221px;
+	color: #fff;
+	font-size: 25px;
+	line-height: 39px;
+	background: #333;
+	float: left;
+}
+
+#left-side-card-footer_name span {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-left: 5px;
+}
+
+#left-side-card-pic-container {
+	height: 221px;
+	width: inherit;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+#left-side-card-pic {
+	height: inherit;
+	width: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%; 
+}
+
+
+#pokeball-bg-red {
+	height: inherit;
+	width: 50px;
+	position: absolute;
+	top: 0px;
+	left: 340px;
+	background-image: url('images/pokeball_card_red.png');
+	z-index: 2;
+}
+
+#vs-matchup-slider {
+	height: 260px;
+	width: 520px;
+	position: absolute;
+	top: 0px;
+	left: 260px;
+	z-index: 0;
+	background-color: #999;
+	background: -webkit-linear-gradient(top, #aaa 0%,#fff 100%); 
+	background: -moz-linear-gradient(top, #efefef 0%,#d6d6d6 100%); 
+	background: -o-linear-gradient(top, #efefef 0%,#d6d6d6 100%); 
+	background: -ms-linear-gradient(top, #efefef 0%,#d6d6d6 100%); 
+	background: linear-gradient(top, #efefef 0%,#d6d6d6 100%);
+}
+
+#matchup-slider-pokeball {
+	height: 260px;
+	width: 260px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#slider-pokeball-header {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	background: #c00;
+	cursor: pointer;
+}
+
+#slider-pokeball-header span {
+	padding: 0px 5px;
+}
+
+#slider-pokeball-winner {
+	height: 195px;
+	width: inherit;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+
+#slider-pokeball-winner-rotate {
+	height:125px;
+	width: inherit;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	overflow: hidden;
+}
+
+#slider-pokeball-winner-battlescore {
+	height: 30px;
+	width: inherit;
+	line-height: 30px;
+	color: #ccc;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	position: absolute;
+	top: 170px;
+	left: 0px;
+}
+
+#slider-pokeball-winner-pokemon {
+	height: 40px;
+	width: inherit;
+	line-height: 40px;
+	color: #fff;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 0px #777;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+
+#slider-pokeball-winner-message {
+	height: 20px;
+	width: inherit;
+	line-height: 20px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 48px;
+	left: 0px;
+}
+
+#slider-pokeball-winner-message span {
+	text-transform: uppercase;
+	background: #777;
+	padding: 2px;
+}
+
+#slider-pokeball-footer {
+	height: 39px;
+	width: inherit;
+	line-height: 39px;
+	color: #000;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	background: #ccc;
+}
+
+#pokeball {
+	-webkit-transition: 1s;
+	-webkit-transform: 1s;
+}
+
+/***** BATTLE STATS *****/
+
+#matchup-slider-stats {
+	height: 260px;
+	width: 260px;
+	color: #fff;
+	position: absolute;
+	top: 0px;
+	left: 260px;
+}
+
+#slider-stats-header {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	background: #c00;
+	cursor: pointer;
+}
+
+#slider-stats-header span {
+	padding: 0px 5px;
+}
+
+#slider-stats-battle {
+	height: 195px;
+	width: inherit;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+
+#slider-stats-battle-left {
+	height: inherit;
+	width: 127.5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/***** HP *****/
+
+#slider-stats-battle-hp-left {
+	height: 15px;
+	width: inherit;
+}
+
+#hp-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}
+
+#hp-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#hp-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-hp-right {
+	height: 15px;
+	width: inherit;
+}
+
+#hp-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}
+
+#hp-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#hp-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** ATT *****/
+
+#slider-stats-battle-att-left {
+	height: 15px;
+	width: inherit;
+}
+
+#att-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 45px;
+	left: 0px;
+}
+
+#att-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#att-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-att-right {
+	height: 15px;
+	width: inherit;
+}
+
+#att-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 45px;
+	left: 0px;
+}
+
+#att-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#att-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** DEF *****/
+
+#slider-stats-battle-def-left {
+	height: 15px;
+	width: inherit;
+}
+
+#def-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 75px;
+	left: 0px;
+}
+
+#def-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#def-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-def-right {
+	height: 15px;
+	width: inherit;
+}
+
+#def-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 75px;
+	left: 0px;
+}
+
+#def-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#def-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** S.A. *****/
+
+#slider-stats-battle-spatt-left {
+	height: 15px;
+	width: inherit;
+}
+
+#spatt-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 105px;
+	left: 0px;
+}
+
+#spatt-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#spatt-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-spatt-right {
+	height: 15px;
+	width: inherit;
+}
+
+#spatt-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 105px;
+	left: 0px;
+}
+
+#spatt-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#spatt-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** S.D. *****/
+
+#slider-stats-battle-spdef-left {
+	height: 15px;
+	width: inherit;
+}
+
+#spdef-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 135px;
+	left: 0px;
+}
+
+#spdef-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#spdef-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-spdef-right {
+	height: 15px;
+	width: inherit;
+}
+
+#spdef-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 135px;
+	left: 0px;
+}
+
+#spdef-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#spdef-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** SPD *****/
+
+#slider-stats-battle-spd-left {
+	height: 15px;
+	width: inherit;
+}
+
+#spd-left {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 165px;
+	left: 0px;
+}
+
+#spd-left-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: right;
+}
+
+#spd-left-bar {
+	height: inherit;
+	float: right;
+	padding-right: 10px;
+}
+
+#slider-stats-battle-spd-right {
+	height: 15px;
+	width: inherit;
+}
+
+#spd-right {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 165px;
+	left: 0px;
+}
+
+#spd-right-num {
+	height: inherit;
+	font-size: 12px;
+	font-weight: 300;
+	background: #333;
+	padding: 0px 2px;
+	float: left;
+}
+
+#spd-right-bar {
+	height: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+/***** END STATS *****/
+
+#slider-stats-battle-border {
+	height: inherit;
+	width: 5px;
+	background: #777;
+	position: absolute;
+	top: 0px;
+	left: 127.5px;
+}
+
+#slider-stats-battle-right {
+	height: inherit;
+	width: 127.5px;
+	position: absolute;
+	top: 0px;
+	left: 132.5px;
+}
+
+#slider-stats-battle-label {
+	height: inherit;
+	width: 25px;
+	position: absolute;
+	top: 0px;
+	left: 117.5px;
+}
+
+#hp {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	background: #333;
+}
+
+#att {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	background: #333;
+}
+
+#def {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	background: #333;
+}
+
+#sa {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	background: #333;
+}
+
+#sd {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	background: #333;
+}
+
+#spd {
+	height: 25px;
+	width: inherit;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	background: #333;
+}
+
+#slider-stats-footer {
+	height: 39px;
+	width: inherit;
+	line-height: 39px;
+	color: #000;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	background: #ccc;
+}
+
+#vs-right-side-pokemon {
+	height: inherit;
+	width: 390px;
+	position: absolute;
+	top: 0px;
+	left: 390px;
+	background-color: #ccc;
+	z-index: 1;
+}
+
+#vs-right-side-selector {
+	height: inherit;
+	width: 130px;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	top: 0px;
+	left: 260px;
+	background: #333;
+}
+
+#right-side-selector-sort {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+	background: #777;
+}
+
+#right-side-selector-sort-by {
+	height: inherit;
+	width: 65px;
+	font-weight: 400;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000;
+}
+
+#right-side-selector-sort-name {
+	height: inherit;
+	width: 32px;
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	cursor: pointer;
+}
+
+#right-side-selector-sort-id {
+	height: inherit;
+	width: 33px;
+	position: absolute;
+	top: 0px;
+	left: 97.5px;
+	cursor: pointer;
+}
+
+#right-side-selector-list {
+	height: 208px;
+	width: inherit;
+	text-align: right;
+	overflow: scroll;
+}
+
+#right-side-selector-list-form ul li {
+	height: 26px;
+	width: inherit;
+	line-height: 26px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+#right-side-selector-list-form ul li:nth-child(odd) {
+	background: #333;
+}
+
+#right-side-selector-list-form ul li:nth-child(even) {
+	background: #444;
+}
+
+#right-side-selector-list-form ul li div {
+	padding-right: 5px;
+}
+
+#right-side-selector-list-form ul li:hover {
+	background: #c00;
+}
+
+#right-side-selector-list-form ul li label {
+	padding-right: 5px;
+}
+
+#right-side-selector-list-form ul li label span {
+	color: #aaa;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+#right-side-selector-scroll {
+	height: 26px;
+	width: inherit;
+	position: relative;
+	background: #777;
+}
+
+#right-side-selector-scroll-up {
+	height: inherit;
+	width: 65px;
+	line-height: 26px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('images/arrow_up.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#right-side-selector-scroll-down {
+	height: inherit;
+	width: 65px;
+	line-height: 26px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	background-image: url('images/arrow_down.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#vs-right-side-card {
+	height: 481px;
+	width: 260px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#right-side-card-header {
+	height: 26px;
+	width: inherit;
+	background: #333;
+}
+
+#right-side-card-spacer {
+	height: 195px;
+	width: inherit;
+}
+
+#right-side-card-footer {
+	height: 39px;
+	width: inherit;
+}
+
+#right-side-card-footer_id {
+	height: inherit;
+	width: 39px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 39px;
+	text-align: center;
+	background: #c00;
+	float: left;
+}
+
+#right-side-card-footer_name {
+	height: inherit;
+	width: 221px;
+	color: #fff;
+	font-size: 25px;
+	line-height: 39px;
+	text-align: right;
+	background: #333;
+	float: left;
+}
+
+#right-side-card-footer_name span {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-right: 5px;
+}
+
+#right-side-card-pic-container {
+	height: 221px;
+	width: inherit;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+#right-side-card-pic {
+	height: inherit;
+	width: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%; 
+}
+
+#right-side-card-pic-more-info {
+	height: 241px;
+	width: inherit;
+	color: #333;
+	text-align: right;
+	font-weight: 300;
+	position: absolute;
+	top: 260px;
+	left: 0px;
+}
+
+#right-side-card-pic-more-info span {
+	font-weight: 700;
+}
+
+#output-right-info {
+	padding: 5px;
+}
+
+#left-side-card-pic-more-info {
+	height: 241px;
+	width: inherit;
+	color: #333;
+	font-weight: 300;
+	position: absolute;
+	top: 260px;
+	left: 0px;
+}
+
+#left-side-card-pic-more-info span {
+	font-weight: 700;
+}
+
+#output-left-info {
+	padding: 5px;
+}
+
+#type-left {
+	font-size: 25px;
+}
+
+#type-right {
+	font-size: 25px;
+}
+
+#pokeball-bg-white {
+	height: inherit;
+	width: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('images/pokeball_card_white.png');
+	z-index: 2;
+}
+
+#vs-pokeball-container {
+	height: 100px;
+	width: 100px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	top: 80px;
+	left: 340px;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+#vs-pokeball {
+	height: inherit;
+	width: inherit;
+	background-image: url('images/pokeball_vs.png');
+	-webkit-transition: .5s;
+	-webkit-transform: .5s;
+}
+
+#vs {
+	height: inherit;
+	width: inherit;
+	line-height: 100px;
+}
+
+#battle {
+	color: #ff0;
+	font-size: 25px;
+	text-shadow: 2px 2px 0px #000;
+	font-weight: 700;
+	position: absolute;
+	top: 32px;
+	left: 11px;
+	display: none;
+	-webkit-animation-name: battleScale;
+	-webkit-animation-duration:.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function:ease-in-out;
+}
+
+.rotate-90 {
+	-webkit-transform: rotate(-90deg); -webkit-animation-timing-function: linear;
+}
+
+.positive-45 {
+	-webkit-transform: rotate(45deg); -webkit-animation-timing-function: ease-in-out;
+}
+
+.negative-45 {
+	-webkit-transform: rotate(-45deg); -webkit-animation-timing-function: ease-in-out;
+}
+
+.zero {
+	-webkit-transform: rotate(0deg); -webkit-animation-timing-function: ease-in-out;
+}
+
+#footer-battle-button {
+	height: 40px;
+	width: 100px;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 1px 0px #333;
+	line-height: 40px;
+	position: absolute;
+	margin: 5px 0px;
+	top: 0px;
+	left: 340px;
+	border-radius: 5px;
+	background-color: #c00;
+	background: -webkit-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -moz-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -o-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -ms-linear-gradient(top, #c00 0%,#900 100%); 
+	background: linear-gradient(top, #c00 0%,#900 100%);
+	cursor: pointer;
+	z-index: 10;
+}
+
+#footer-battle-button:hover {
+	background-color: #900;
+	background: -webkit-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -moz-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -o-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -ms-linear-gradient(top, #900 0%,#c00 100%); 
+	background: linear-gradient(top, #900 0%,#c00 100%);
+}
+
+#footer-battle-reset-button {
+	height: 40px;
+	width: 100px;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 1px 0px #333;
+	line-height: 40px;
+	position: absolute;
+	margin: 5px 0px;
+	top: 0px;
+	left: 340px;
+	border-radius: 5px;
+	background-color: #c00;
+	background: -webkit-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -moz-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -o-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -ms-linear-gradient(top, #c00 0%,#900 100%); 
+	background: linear-gradient(top, #c00 0%,#900 100%);
+	cursor: pointer;
+	display: none;
+	z-index: 10;
+}
+
+#footer-battle-reset-button:hover {
+	background-color: #900;
+	background: -webkit-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -moz-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -o-linear-gradient(top, #900 0%,#c00 100%); 
+	background: -ms-linear-gradient(top, #900 0%,#c00 100%); 
+	background: linear-gradient(top, #900 0%,#c00 100%);
+}
+
+#footer-shuffle-button {
+	height: 30px;
+	width: 75px;
+	color: #333;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 1px 0px #777;
+	line-height: 30px;
+	position: absolute;
+	margin: 10px 0px;
+	top: 0px;
+	left: 240px;
+	border-radius: 5px;
+	background-color: #ccc;
+	background: -webkit-linear-gradient(top, #ccc 0%,#aaa 100%); 
+	background: -moz-linear-gradient(top, #ccc 0%,#aaa 100%); 
+	background: -o-linear-gradient(top, #c00 0%,#900 100%); 
+	background: -ms-linear-gradient(top, #c00 0%,#900 100%); 
+	background: linear-gradient(top, #c00 0%,#900 100%);
+	cursor: pointer;
+	z-index: 10;
+}
+
+#footer-shuffle-button:hover {
+	background-color: #aaa;
+	background: -webkit-linear-gradient(top, #aaa 0%,#ccc 100%); 
+	background: -moz-linear-gradient(top, #aaa 0%,#ccc 100%); 
+	background: -o-linear-gradient(top, #aaa 0%,#ccc 100%); 
+	background: -ms-linear-gradient(top, #aaa 0%,#ccc 100%); 
+	background: linear-gradient(top, #aaa 0%,#ccc 100%);
+}
+
+.highlight {
+	background: #c00 !important;
+}
+
+.advantage {
+	background: #ff0 !important; 
+}
+
+.disadvantage {
+	background: #777 !important;
+}
+
+@-webkit-keyframes battleScale {
+0% { -webkit-transform:scale(0); }
+90% { -webkit-transform:scale(1.2); }
+100% {-webkit-transform:scale(1); }
+}
